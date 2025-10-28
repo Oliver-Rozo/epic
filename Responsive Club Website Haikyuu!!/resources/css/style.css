@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Racing Sans One", sans-serif;
+    background-color: #F9F9F9;
+    background: linear-gradient(rgba(249, 249, 249, 1) 25%, rgba(238, 125, 28, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 24rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 2rem 0 4rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.full_team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.full_team img {
+    width: 48rem;
+    max-width: 100%;
+    height: auto;
+}
+
+main h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    align-items: center;
+}
+
+.player img {
+    width: 16rem;
+    height: 24rem;
+}
+
+.player p {
+    display: inline;
+    width: 16rem;
+    color: white;
+    text-align: center;
+    text-shadow: -0.125rem 0.125rem 0.0625rem rgba(48, 48, 48, 0.55);
+}
+
+.player a {
+    font-size: 1.5rem;
+    text-decoration: bold;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../images/images.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 125rem) {
+    main h2 {
+        font-size: 2.75rem;
+    }
+
+    .player img {
+        width: 24rem;
+        height: 36rem;
+    }
+
+    .player p {
+        font-size: 1.75rem;
+    }
+
+    .player a {
+        font-size: 2.25rem;
+    }
+
+    .full_team img {
+        width: 64rem;
+    }
+
+    .full_team h1 {
+        font-size: 3rem;
+    }
+
+    header img {
+        width: 36rem;
+    }
+
+    header h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 33rem) {
+    .player img {
+        width: 24rem;
+        height: 36rem;
+    }
+
+    .player p {
+        font-size: 1.75rem;
+    }
+
+    .player a {
+        font-size: 2.25rem;
+    }
+}
